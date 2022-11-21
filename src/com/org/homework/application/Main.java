@@ -31,16 +31,14 @@ public class Main {
 
     }
 
-    @SuppressWarnings("rawtypes")
-    public static void enQueueProcessing(CustomQueue queue) {
+    public static void enQueueProcessing(CustomQueue<?> queue) {
         System.out.println("Queue is empty: " + queue.isEmpty());
         System.out.println("Queue is full: " + queue.isFull());
         System.out.println("Queue's size: " + queue.size());
         System.out.println(queue);
     }
 
-    @SuppressWarnings("rawtypes")
-    public static void deqQueueProcessing(CustomQueue queue) {
+    public static void deqQueueProcessing(CustomQueue<?> queue) {
         System.out.println(queue.dequeue());
         System.out.println("Queue is empty: " + queue.isEmpty());
         System.out.println("Queue is full: " + queue.isFull());
