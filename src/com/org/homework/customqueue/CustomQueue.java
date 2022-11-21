@@ -24,10 +24,10 @@ public class CustomQueue<T> {
 
     @SuppressWarnings("unchecked")
     public CustomQueue(int size) {
-        this.array = (T[]) new Object[size];
-        this.rear = size - 1;
-        this.capacity = size;
-        this.count = 0;
+        array = (T[]) new Object[size];
+        rear = size - 1;
+        capacity = size;
+        count = 0;
     }
 
     public boolean isEmpty() {
